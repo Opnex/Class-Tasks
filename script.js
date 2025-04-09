@@ -115,15 +115,15 @@ class BankAccount {
         this.balance = balance;
     }
     deposit(amount) {
-        this.balance += amount; // Update the balance
+        this.balance += amount;
         return this.balance;
     }
     withdraw(amount) {
         if (amount > this.balance) {
-            console.log(`Insufficient funds for ${this.owner}`);
+            console.log(`Insufficient funds for`);
             return this.balance;
         }
-        this.balance -= amount; // Update the balance
+        this.balance -= amount;
         return this.balance;
     }
     getBalance() {
